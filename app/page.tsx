@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Categories from "./components/navbar/Categories";
 
 export default function Home() {
   return (    
-      <main className="">
-        <h2 className="text-[var(--airbnb)]">Holaawd adadaff afawaaa</h2>
+      <main className="max-w-[1500px] mx-auto px-6">
+        <Categories/>
       </main>      
   );
 }
