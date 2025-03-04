@@ -20,7 +20,7 @@ const SearchFilters = () =>{
 
                     <div className="cursor-pointer h-[48px] lg:h-[64px] px-8 flex flex-col justify-center rounded-full hover:bg-gray-100">
                         <p className="text-xs font-semibold">ajdwbd?</p>
-                        <p className="text-sm">awdda?</p>
+                        <p className="text-sm">awdda? </p>
                     </div>
                 </div>
             </div>
