@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --airbnb: #ff385c;
+  --airbnb-black: #d50027;
+}
+
+
