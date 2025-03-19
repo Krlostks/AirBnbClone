@@ -1,11 +1,11 @@
-import PRopertyListItem from "./PropertyListItem";
+import PropertyListItem from "./PropertyListItem";
  
  const PropertyList =()=>{
      return(
          <>
-             <PRopertyListItem/>
-             <PRopertyListItem/>
-             <PRopertyListItem/>
+             <PropertyListItem/>
+             <PropertyListItem/>
+             <PropertyListItem/>
          </>
      )
  }

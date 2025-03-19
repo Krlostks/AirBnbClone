@@ -1,5 +1,5 @@
 import Image from "next/image";
- const PRopertyListItem = ()=>{
+ const PropertyListItem = ()=>{
      return(
          <div className="cursor-pointer">
              <div className="relative overflow-hidden aspect-square rounded-xl">
@@ -22,4 +22,4 @@ import Image from "next/image";
      )
  }
  
- export default PRopertyListItem;
+ export default PropertyListItem;
