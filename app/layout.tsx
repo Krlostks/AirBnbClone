@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Content } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/navbar/Navbar";
-
+import Modal from "./components/modals/Modal";
 
 const inter = Inter({
   subsets: ["latin"]
@@ -18,6 +18,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const content =(
+    <p>yo yo yo</p>
+  )
   return (
     <html lang="en">
       <body
