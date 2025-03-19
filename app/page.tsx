@@ -1,5 +1,5 @@
 import PropertyList from "./components/properties/PropertyList";
-import Categories from "./components/navbar/Categories";
+import Categories from "./components/Categories";
 
 export default function Home() {
   return (    
