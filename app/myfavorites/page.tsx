@@ -3,7 +3,6 @@ import { getUserId } from "../lib/actions";
 
 const MyFavoritesPage = async () => {
     const userId = await getUserId();
-
     if (!userId) {
         return (
             <main className="max-w-[1500px] max-auto px-6 py-12">
@@ -21,7 +20,7 @@ const MyFavoritesPage = async () => {
                     favorites={true}
                 />
             </div>
-        </main>
+        </main>     
     )
 }
 

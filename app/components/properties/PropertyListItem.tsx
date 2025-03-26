@@ -33,6 +33,7 @@ import FavoriteButton from "../FavoriteButton";
                      />
                  )}
              </div>
+             
              <div className="text-lg font-bold">
                 {property.title}
              </div>

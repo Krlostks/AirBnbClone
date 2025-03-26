@@ -19,11 +19,12 @@ interface PropertyListProps {
 
 const PropertyList: React.FC<PropertyListProps> = ({
     landlord_id,
-    favorites
+    favorites,
 })=>{
     const[properties, setProperties] = useState<PropertyType[]>([]);
 
-    const markFavorite = (id: string, is_favorite: boolean) => {
+    const markFavorite = (id: string, is_favorite: boolean) => {        
+
         const tmpProperties = properties.map((property: PropertyType) => {
             if (property.id == id) {
                 property.is_favorite = is_favorite
@@ -37,6 +38,7 @@ const PropertyList: React.FC<PropertyListProps> = ({
 
             return property;
         })
+        console.log('Es favorito: ', tmpProperties);
 
         setProperties(tmpProperties);
     }
@@ -47,10 +49,12 @@ const PropertyList: React.FC<PropertyListProps> = ({
          if (landlord_id) {
              url += `?landlord_id=${landlord_id}`
          }else if(favorites){
-            url+='?is_favorites=true'
+            url+='?is_favorites=true'            
         }
  
          const tmpProperties = await apiService.get(url)
+         console.log('propedades: ', tmpProperties);
+         console.log('url: ', url);
         
          setProperties(tmpProperties.data.map((property: PropertyType) => {
             if (tmpProperties.favorites.includes(property.id)) {
