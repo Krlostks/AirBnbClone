@@ -11,7 +11,7 @@ const LogoutButton: React.FC = () => {
 
     const submitLogout = async () => {
         resetAuthCookies();
-        window.location.reload();
+        
         router.push('/')
     }
 

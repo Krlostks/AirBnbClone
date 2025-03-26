@@ -24,8 +24,8 @@ const ReservationSidebar: React.FC<ReservationSidebarProps> = ({
                 </select>
             </div>
 
-            <div className="w-full mb-6 py-6 text-center text-white bg-airbnb hover:bg-airbnb-dark rounded-xl">
-                Book
+            <div className="w-full mb-6 py-6 text-center text-white bg-[var(--airbnb)] hover:bg-[var(--airbnb-black)] rounded-xl">
+                Boock
             </div>
 
             <div className="mb-4 flex justify-between align-center">
