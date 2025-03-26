@@ -13,7 +13,7 @@
                  </div>
  
                  <div className="w-[80%] ml-[20%] py-4 px-6 rounded-xl bg-blue-200 ">
-                     <p className="font-bold text-gray-500">Santiago</p>
+                     <p className="font-bold text-gray-500">Krlossss</p>
  
                      <p>ghgfjfgfghfghfghfghhhhhhhhhfh</p>
                  </div>
