@@ -23,7 +23,10 @@ import { getUserId } from "@/app/lib/actions";
                         <h1 className="mt-6 text-2xl">{landlord.name} </h1>
 
                         {userId != params.id && (
-                             <ContactButton />
+                             <ContactButton 
+                             userId={userId}
+                             landlordId={params.id}
+                         />
                          )}
 
                     </div>
