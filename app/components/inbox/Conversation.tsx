@@ -8,7 +8,7 @@
      userId: string;
  }
  
- const Conversation: React.FC<ConversationProps> = ({
+ const  Conversation: React.FC<ConversationProps> = ({
      conversation,
      userId
  }) => {

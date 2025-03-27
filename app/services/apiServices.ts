@@ -4,7 +4,7 @@ const apiService = {
     get: async function (url: string): Promise<any> {
 
         const token = await getAccessToken();
-
+        console.log(url);
         return new Promise((resolve, reject) => {
             fetch(`${process.env.NEXT_PUBLIC_API_HOST}${url}`, {  
                 method: 'GET',
@@ -17,8 +17,10 @@ const apiService = {
                 .then(response => response.json())
                 .then((json) => {
                     resolve(json);
+                    console.log("error: "   )
                 })
                 .catch(( response) => {  
+                    console.error("error: " ,response)
                     reject(response);  
                 });
         });
