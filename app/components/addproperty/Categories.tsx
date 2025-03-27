@@ -49,6 +49,18 @@ const Categories: React.FC<CategoriesProps> = ({
                                         />
                                         <span className="text-xs">Cabins</span>
                             </div>
+                    <div 
+                            onClick={()=>setCategory('islands')}
+                            className={`pb-4 flex flex-col items-center space-y-2 border-b-2 ${dataCategory == 'Cabins' ? 'border-gray-800' : 'border-white'} opacity-60 hover:border-gray-200 hover:opacity-100`}
+                     >
+                                <Image
+                                            src="/islands.jpg"
+                                            alt="Category - cabins"
+                                            width={20}
+                                            height={20}
+                                        />
+                                        <span className="text-xs">Islands</span>
+                            </div>
                 
                     <div 
                         onClick={()=>setCategory('tiny_homes')}
